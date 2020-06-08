@@ -6,16 +6,16 @@ function makeTableFromCountry (countries,about){
 				table +='<table width="75%">';
 					for(let k = 2; k < 6; k++){
 						table+="<tr>"
-							table+="<td>" + about[k] + "</td>"
-							table+="<td>" + countries[i][k] + "</td>"
+							table+="<td width=50%>" + about[k] + "</td>"
+							table+="<td width=50%>" + countries[i][k] + "</td>"
 						table+="</tr>";
 					}
 				table+="</table>";
 				table+='<table width="100%">';
 					for(let k = 6; k < 7; k++){
 						table+="<tr>"
-							table+="<td>" + about[k] + "</td>"
-							table+="<td>"
+							table+="<td width=50%>" + about[k] + "</td>"
+							table+="<td width=50%>"
 								let arr = countries[i][k].map((num, number)=>{
 									return "<div>" + (number+1) + ") " + num +"</div>"
 								}) 
@@ -24,12 +24,12 @@ function makeTableFromCountry (countries,about){
 						table+="<tr>"
 					}
 					table+="</table>";
-					table +='<table width="100%">';
+					table +='<table width="100% ">';
 						for(let k = 7; k < about.length; k++){
 							table+="<tr>"
 								if (k < about.length-1 ) {
-									table+="<td>" + about[k] + "</td>"
-									table+="<td>"
+									table+="<td width=50%>" + about[k] + "</td>"
+									table+="<td width=50%>"
 										let lit = countries[i][k].map((num, number)=>{
 											let p = num.map((n)=>{
 												return n
